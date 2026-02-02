@@ -1,1 +1,93 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@700&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: #000 url('bgforprox.png') center/cover no-repeat fixed;
+  color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero { width: 100%; padding: 2rem; text-align: center; }
+.container { max-width: 760px; margin: 0 auto; }
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5.5rem;
+  background: linear-gradient(90deg, #00ffaa, #00d4ff, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.4rem;
+}
+.logo span { font-size: 3rem; opacity: 0.9; }
+
+.tagline { font-size: 1.4rem; opacity: 0.85; margin: 1rem 0 2.5rem; }
+
+.search-box {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto 2rem;
+}
+#url {
+  width: 100%;
+  padding: 1.2rem 6rem 1.2rem 1.8rem;
+  font-size: 1.2rem;
+  background: rgba(30,30,45,0.7);
+  border: 1px solid rgba(0,255,170,0.3);
+  border-radius: 18px;
+  color: white;
+  backdrop-filter: blur(14px);
+}
+#url:focus { outline: none; border-color: #00ffaa; box-shadow: 0 0 0 4px rgba(0,255,170,0.2); }
+
+#go {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.8rem 2rem;
+  background: linear-gradient(90deg, #00ffaa, #00d4ff);
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#go:hover { transform: translateY(-50%) scale(1.05); box-shadow: 0 6px 20px rgba(0,255,170,0.4); }
+
+.quick {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.quick button {
+  padding: 0.7rem 1.6rem;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 999px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.quick button:hover { background: rgba(0,255,170,0.25); border-color: #00ffaa; }
+
+.status {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  min-height: 1.5rem;
+  color: #00ffaa;
+}
+
+footer {
+  margin-top: 5rem;
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+footer a { color: #00ffaa; text-decoration: none; }
